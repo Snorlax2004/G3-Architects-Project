@@ -3,10 +3,10 @@
     margin: 0;
     padding: 0;
 } */
-body {
-    /* max-width: 1920px; */
+/* body {
+    max-width: 1920px;
     width: 100%;
-}
+} */
 /* shared-styles */
 .work-sans-font{
   font-family: "Work Sans", sans-serif;
@@ -49,3 +49,32 @@ body {
     align-items: center;
 }
 
+/* banner-styles */
+
+.banner-content{
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 4rem;
+}
+.banner-description{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.btn-1{
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    padding: 20.5px 25.5px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.banner-img{
+    width: 100%;
+}

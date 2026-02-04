@@ -89,6 +89,8 @@ main > section{
     margin-top: 130px;
 }
 
+/* teams-styles */
+
 .teams{
     margin-left: 301px;
     margin-right: 301px;
@@ -103,7 +105,7 @@ main > section{
 .our-features{
     max-width: 537px;
 }
-.feature-title{
+.feature-title, .section-title{
     font-size: 3rem;
 }
 #quick-list{
@@ -112,11 +114,46 @@ main > section{
 #features{
     color: #FF900E;
 }
-.our-features > p{
+.our-features > p, .section-text{
     font-weight: 400;
     font-size: 1rem;
     margin-bottom: 32px;
     line-height: 26px;
+}
+
+/* fact-styles */
+
+.section-intro{
+    max-width: 542px;
+    margin-left: 240px;
+    margin-bottom: 100px;
+}
+.fact-container{
+    max-width: 1340px;
+    margin-left: 290px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fact{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45px;
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.fact-name{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 10px;
 }
 /* media-query */
 
@@ -135,4 +172,41 @@ main > section{
     .our-features{
         text-align: center;
     }
+    .section-intro, .fact-container{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .fact-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+     .teams{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .teams{
+        margin-left: 20px;
+        margin-right: 20px;
+    }    
+    .team-img-container{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    .our-features{
+        text-align: center;
+    }
+    .section-intro, .fact-container{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .fact-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
 }

@@ -120,6 +120,55 @@ main > section{
     line-height: 26px;
 }
 
+/* features-styles */
+
+.features-section{
+    margin: 0 auto;
+    max-width: 1440px;
+    justify-content: center;
+    gap: 140px;
+    margin-top: 130px;
+}
+
+.features-section > div > div > .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+.features-section > div > div > p{
+    max-width: 586px;
+    margin-bottom: 30px;
+}
+.feature-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    max-width: 586px;
+    margin-bottom: 20px;
+}
+.card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.card-text{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 26px;
+    margin-bottom: 0px;
+}
+#badge{
+    padding: 45px 42px;
+    margin-left: -90px;
+    margin-top: -77px;
+}
+#experience-year{
+    font-weight: 700;
+    font-size: 4rem;
+}
+#experience{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
 /* fact-styles */
 
 .section-intro{
@@ -172,7 +221,7 @@ main > section{
 /* media-query */
 
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links, .teams{
+    .navbar, .nav-links, .teams, .features-section{
         flex-direction: column;
         gap: 50px;
     }
@@ -203,10 +252,18 @@ main > section{
         margin-left: 20px;
         margin-right: 20px;
     }
+    #architect-img{
+        width: 100%;
+    }
+    #badge{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
-     .navbar, .nav-links, .teams{
+     .navbar, .nav-links, .teams, .features-section{
         flex-direction: column;
         gap: 50px;
     }
@@ -237,5 +294,17 @@ main > section{
         flex-direction: column;
         gap: 50px;
     }
-
+    .feature-cards-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    #architect-img{
+        width: 100%;
+    }
+    #badge{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
 }

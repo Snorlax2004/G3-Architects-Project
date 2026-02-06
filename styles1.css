@@ -218,6 +218,22 @@ main > section{
     justify-content: center;
     align-items: center;
 }
+
+/* footer-styles */
+
+.footer-container{
+    max-width: 1440px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    margin: 130px auto 216px;
+    background-color: #FFF4E7;
+    padding: 40px ;
+}
+.footer-text{
+    font-weight: 400;
+    font-size: 1.25rem;
+}
 /* media-query */
 
 @media screen and (max-width: 576px) {
@@ -245,8 +261,9 @@ main > section{
         justify-items: center;
     }
     .sponsor-img-container{
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 50px;
+        flex-wrap: wrap;
     }
     .sponsor-info{
         margin-left: 20px;
@@ -291,8 +308,9 @@ main > section{
         margin: 0 auto;
     }
     .sponsor-img-container{
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 50px;
+        flex-wrap: wrap;
     }
     .feature-cards-container{
         display: grid;
